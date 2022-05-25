@@ -14,7 +14,7 @@ services:
           build:
                   context: ./php/online-shopping-system/database
                   dockerfile: Dockerfile_db
-          image: sreedocker123/bdaecommdb:latest
+          image: nibha1611/bdaecommdb:latest
           container_name: mysqli
           command: --default-authentication-plugin=mysql_native_password
           restart: always
