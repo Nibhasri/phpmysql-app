@@ -4,12 +4,12 @@ services:
        build:
                context: ./php/online-shopping-system
                dockerfile: Dockerfile_update_webapp
-       image: sreedocker123/bdaecommphp:latest
+       image: nibha1611/bdaecommphp:latest
        container_name: php_app
        depends_on:
          - db
        ports:
-         - 8008:80
+         - 9001:80
   db:
           build:
                   context: ./php/online-shopping-system/database
@@ -24,4 +24,4 @@ services:
             MYSQL_USER: edureka
             MYSQL_PASSWORD: admin
           ports:
-           - 6033:3306
+           - 6035:3306
