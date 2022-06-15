@@ -15,7 +15,7 @@ services:
                   context: ./php/online-shopping-system/database
                   dockerfile: Dockerfile_db
           image: nibha1611/bdaecommdb:latest
-          container_name: mysqli
+          container_name: mysqlinew
           command: --default-authentication-plugin=mysql_native_password
           restart: always
           environment:
