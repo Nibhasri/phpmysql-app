@@ -4,7 +4,7 @@ services:
        build:
                context: ./php/online-shopping-system
                dockerfile: Dockerfile_update_webapp
-       image: nibha1611/bdaecommphp:latest
+       image: nibha1611/bdaecommphp1:latest
        container_name: php_app_1
        depends_on:
          - db
@@ -14,7 +14,7 @@ services:
           build:
                   context: ./php/online-shopping-system/database
                   dockerfile: Dockerfile_db
-          image: nibha1611/bdaecommdb:latest
+          image: nibha1611/bdaecommdb1:latest
           container_name: mysqlinew
           command: --default-authentication-plugin=mysql_native_password
           restart: always
