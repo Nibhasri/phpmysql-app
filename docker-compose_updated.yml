@@ -9,7 +9,7 @@ services:
        depends_on:
          - db
        ports:
-         - 9001:80
+         - 9002:80
   db:
           build:
                   context: ./php/online-shopping-system/database
@@ -24,4 +24,4 @@ services:
             MYSQL_USER: edureka
             MYSQL_PASSWORD: admin
           ports:
-           - 6035:3306
+           - 6036:3306
